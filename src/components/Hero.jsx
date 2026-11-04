@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, FileText } from "lucide-react";
 import { focusRing } from "../lib/ui";
 
 const profileModules = import.meta.glob("/src/assets/profile.jpg", {
@@ -8,13 +8,15 @@ const profileModules = import.meta.glob("/src/assets/profile.jpg", {
 });
 const profileSrc = Object.values(profileModules)[0];
 
+const RESUME_URL = "https://drive.google.com/file/d/18qXKcBq8u6gDYgGqPxneRlJxGaudc28J/view?usp=drive_link";
+
 export default function Hero() {
   const [imgError, setImgError] = useState(false);
   const go = (id) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   const showImage = Boolean(profileSrc) && !imgError;
 
   return (
-    <section id="top" aria-labelledby="hero-heading" className="scroll-mt-20 px-6 pb-24 pt-32 md:pt-40">
+    <section id="top" aria-labelledby="hero-heading" className="scroll-mt-20 px-6 pb-20 pt-32 md:pt-40">
       <div className="mx-auto grid max-w-5xl items-center gap-12 md:grid-cols-[1fr_auto]">
         <div className="order-2 md:order-1">
           <span className="inline-flex items-center gap-2 rounded-full border border-lavender-grey/30 px-3 py-1 text-xs text-lavender-grey">
@@ -28,11 +30,11 @@ export default function Hero() {
           <h1 id="hero-heading" className="mt-6 text-4xl font-extrabold tracking-tight text-platinum md:text-5xl">
             RJ Castillano
           </h1>
-          <p className="mt-3 text-xl font-medium text-lavender-grey">Backend Developer &amp; Software Engineer</p>
+          <p className="mt-3 text-xl font-medium text-lavender-grey">Backend Developer Intern Candidate</p>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-lavender-grey">
-            I build RESTful APIs and design relational and document database schemas for full-stack web and mobile
-            systems. My work centers on secure server-side logic, clean data models, and maintainable backend
-            architecture.
+            Computer Science student focused on backend development, with hands-on experience building RESTful APIs,
+            managing relational and NoSQL databases, and integrating real-time cloud services. Experienced with Node.js,
+            Express.js, Laravel, and Firebase across web and mobile platforms.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -44,10 +46,19 @@ export default function Hero() {
               View Projects
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </button>
+            <a
+              href={RESUME_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`inline-flex items-center gap-2 rounded-lg border border-lavender-grey/50 px-5 py-2.5 text-sm font-semibold text-platinum transition-all duration-300 hover:-translate-y-0.5 hover:border-platinum hover:bg-platinum/10 ${focusRing}`}
+            >
+              <FileText className="h-4 w-4" aria-hidden="true" />
+              View Resume
+            </a>
             <button
               type="button"
               onClick={() => go("contact")}
-              className={`rounded-lg border border-lavender-grey px-5 py-2.5 text-sm font-semibold text-platinum transition-all duration-300 hover:-translate-y-0.5 hover:border-platinum ${focusRing}`}
+              className={`rounded-lg border border-lavender-grey/40 px-5 py-2.5 text-sm font-semibold text-lavender-grey transition-all duration-300 hover:-translate-y-0.5 hover:border-platinum hover:text-platinum ${focusRing}`}
             >
               Contact Me
             </button>

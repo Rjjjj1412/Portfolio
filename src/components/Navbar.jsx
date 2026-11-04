@@ -1,6 +1,8 @@
 import { focusRing } from "../lib/ui";
 import GithubIcon from "./GithubIcon";
 
+const RESUME_URL = "https://drive.google.com/file/d/18qXKcBq8u6gDYgGqPxneRlJxGaudc28J/view?usp=drive_link";
+
 export default function Navbar() {
   const go = (id) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   const toTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
@@ -19,6 +21,13 @@ export default function Navbar() {
         <div className="flex items-center gap-5">
           <button
             type="button"
+            onClick={() => go("skills")}
+            className={`rounded text-sm text-lavender-grey transition-colors duration-300 hover:text-platinum ${focusRing}`}
+          >
+            Skills
+          </button>
+          <button
+            type="button"
             onClick={() => go("projects")}
             className={`rounded text-sm text-lavender-grey transition-colors duration-300 hover:text-platinum ${focusRing}`}
           >
@@ -31,6 +40,14 @@ export default function Navbar() {
           >
             Contact
           </button>
+          <a
+            href={RESUME_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`hidden sm:inline-flex rounded text-sm text-lavender-grey transition-colors duration-300 hover:text-platinum ${focusRing}`}
+          >
+            Resume
+          </a>
           <a
             href="https://github.com/Rjjjj1412"
             target="_blank"

@@ -1,4 +1,4 @@
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Terminal } from "lucide-react";
 import { focusRing } from "../lib/ui";
 
 export default function ProjectCard({ project, index = 0 }) {
@@ -24,8 +24,10 @@ export default function ProjectCard({ project, index = 0 }) {
               </video>
             )
           ) : (
-            <div className="flex h-full w-full items-center justify-center font-mono text-xs text-lavender-grey/70">
-              Demo video coming soon
+            <div className="flex h-full w-full flex-col items-center justify-center p-6 text-center font-mono">
+              <Terminal className="h-8 w-8 text-lavender-grey/60 mb-2" />
+              <p className="text-xs font-semibold text-platinum">{project.title}</p>
+              <p className="mt-1 text-[11px] text-lavender-grey/70">Demo prototype verified during 48-hr hackathon sprint</p>
             </div>
           )}
         </div>
@@ -37,9 +39,9 @@ export default function ProjectCard({ project, index = 0 }) {
 
         <ul className="mt-4 space-y-2 text-sm leading-relaxed text-lavender-grey">
           {project.bullets.map((bullet) => (
-            <li key={bullet} className="flex gap-2">
-              <span className="mt-1 text-platinum" aria-hidden="true">
-                ▹
+            <li key={bullet} className="flex items-start gap-2">
+              <span className="mt-1 text-xs text-lavender-grey shrink-0" aria-hidden="true">
+                •
               </span>
               <span>{bullet}</span>
             </li>
