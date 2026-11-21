@@ -8,7 +8,7 @@ const profileModules = import.meta.glob("/src/assets/profile.jpg", {
 });
 const profileSrc = Object.values(profileModules)[0];
 
-const RESUME_URL = "https://drive.google.com/file/d/18qXKcBq8u6gDYgGqPxneRlJxGaudc28J/view?usp=drive_link";
+const RESUME_URL = "https://drive.google.com/file/d/1wXW2fgTe6XKiYdm7D3JxV26twBqvIZGh/view?usp=drive_link";
 
 export default function Hero() {
   const [imgError, setImgError] = useState(false);
