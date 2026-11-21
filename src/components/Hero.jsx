@@ -24,17 +24,17 @@ export default function Hero() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-lavender-grey opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-lavender-grey" />
             </span>
-            Available for Backend Developer Internships
+            Available for Software Development Internships
           </span>
 
           <h1 id="hero-heading" className="mt-6 text-4xl font-extrabold tracking-tight text-platinum md:text-5xl">
             RJ Castillano
           </h1>
-          <p className="mt-3 text-xl font-medium text-lavender-grey">Backend Developer Intern Candidate</p>
+          <p className="mt-3 text-xl font-medium text-lavender-grey">Software Development Intern Candidate</p>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-lavender-grey">
-            Computer Science student focused on backend development, with hands-on experience building RESTful APIs,
-            managing relational and NoSQL databases, and integrating real-time cloud services. Experienced with Node.js,
-            Express.js, Laravel, and Firebase across web and mobile platforms.
+            Computer Science student passionate about software development across web and mobile platforms. Experienced
+            in building full-stack applications, designing RESTful APIs, managing relational and NoSQL databases, and
+            writing clean, maintainable code with modern frameworks and version control.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">

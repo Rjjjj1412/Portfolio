@@ -3,9 +3,9 @@ import { Server, Database, Code2, Wrench, Layout } from "lucide-react";
 
 const skillCategories = [
   {
-    title: "Backend Development",
+    title: "Software & Web Development",
     icon: Server,
-    description: "Core server-side engineering, API design, and data validation",
+    description: "Full-stack web engineering, API design, and MVC architecture",
     skills: [
       "Node.js",
       "Express.js",
@@ -32,20 +32,20 @@ const skillCategories = [
   {
     title: "Programming Languages",
     icon: Code2,
-    description: "Languages used across web, mobile, and backend projects",
+    description: "Languages used across web, mobile, and software projects",
     skills: ["JavaScript (ES6+)", "PHP", "Dart"],
   },
   {
     title: "Development & Testing Tools",
     icon: Wrench,
-    description: "Version control, API debugging, and endpoint verification",
+    description: "Version control, API verification, and collaborative development",
     skills: ["Git", "GitHub", "Postman", "API Testing"],
   },
   {
-    title: "Frontend & Mobile (Supporting)",
+    title: "Frontend & Mobile Development",
     icon: Layout,
-    description: "Client-side interfaces integrated with backend services",
-    skills: ["React (Vite)", "Flutter", "Blade", "Alpine.js", "Tailwind CSS"],
+    description: "Responsive user interfaces and cross-platform mobile apps",
+    skills: ["React (Vite)", "Flutter", "Tailwind CSS", "Blade", "Alpine.js"],
   },
 ];
 
@@ -62,7 +62,7 @@ export default function Skills() {
             Core Competencies &amp; Skills
           </h2>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-lavender-grey">
-            Specialized in server-side engineering, database modeling, and API integration for web and mobile systems.
+            Skilled in web and mobile software development, RESTful APIs, database modeling, version control, and problem-solving.
           </p>
         </Reveal>
 

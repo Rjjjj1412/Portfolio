@@ -25,7 +25,7 @@ export default function App() {
                 Featured Projects
               </h2>
               <p className="mt-3 max-w-xl text-base leading-relaxed text-lavender-grey">
-                Backend and full-stack engineering — RESTful APIs, database design, and real-time cloud data workflows.
+                Full-stack web, mobile, and software development — interactive applications, RESTful APIs, relational &amp; NoSQL databases, and real-time cloud workflows.
               </p>
             </Reveal>
 

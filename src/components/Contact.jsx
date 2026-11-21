@@ -45,7 +45,7 @@ export default function Contact() {
           Get In Touch
         </h2>
         <p className="mt-3 max-w-xl text-base leading-relaxed text-lavender-grey">
-          I'm actively seeking Backend Developer Intern positions. If you'd like to discuss how I can contribute to
+          I'm actively seeking Software Development Intern positions. If you'd like to discuss how I can contribute to
           your engineering team, my inbox is open.
         </p>
 
